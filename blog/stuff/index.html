@@ -1,0 +1,9 @@
+---
+layout: blog-home
+title:  Blog
+---
+
+
+{% for post in site.categories[stuff] %}
+    <li>{{ post.title }}</li>
+{% endfor %}
