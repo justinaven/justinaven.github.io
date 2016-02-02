@@ -9,8 +9,8 @@ lsi:         false
 
 source:      .
 destination: ./_site
-plugins:     ./_plugins
-layouts:     ./_layouts
+plugins_dir:     ./_plugins
+layouts_dir:     ./_layouts
 include:
     - '.htaccess'
     - _1_foundations
@@ -30,10 +30,10 @@ exclude:
 
 future:      true
 show_drafts: nil
-#limit_posts: 0
-#pygments:    false
+limit_posts: 0
+highlighter:    false
 
-#relative_permalinks: false
+relative_permalinks: false
 
 permalink: /blog/:categories/:title/
 paginate_path: '/blog/page:num'
