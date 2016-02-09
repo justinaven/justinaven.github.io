@@ -24,9 +24,10 @@
 // --------------------------------------------------------
 
 a {
+    text-decoration: none;
     transition: color .3s ease-in-out;
     &:link { color: color('orange'); }
-    &:visited { color: color('purple'); }
+    &:visited { color: color('orange'); }
     &:hover { color: color('gray'); }
     &:active { color: color('orange'); }
 }

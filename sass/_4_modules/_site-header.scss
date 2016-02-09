@@ -9,36 +9,33 @@
 // --------------------------------------------------------
 
 .site-header {
-  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  // box-shadow: 0 1px 3px rgba(0,0,0,.3);
   @include clearfix;
   background: color('orange');
 
+}
 
-  .nav {
-    list-style:none;
-    margin-bottom: spacing('m');
-    padding-bottom: 0;
+.site-nav {
+  list-style:none;
+  padding-bottom: 0;
+  position:relative;
+  li {
+    display: inline-block;
     position:relative;
-    > li {
+    a {
+      color: color('cream');
       display: inline-block;
+      font-size: rem(18);
+      font-weight: bold;
+      padding:  spacing('m');
       position:relative;
-      > a {
-        color: color('silver');
-        display: inline-block;
-        font-size: 14px;
-        font-weight: bold;
-        padding:  spacing('m');
-        position:relative;
-        text-decoration: none;
-        &.active { color:#1e2026; }
-      }
-      &:hover a {
-        color: color('blue-gray');
-      }
+      text-decoration: none;
+    }
+    &:hover a {
+      color: color('navy');
     }
   }
 }
-
 
 
 

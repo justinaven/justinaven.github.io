@@ -21,6 +21,7 @@
     <![endif]-->
 
     <!-- For all other browsers -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <!--[if gt IE 8]><!-->
         <link rel='stylesheet' href='../css/screen.css'>
         
@@ -44,71 +45,146 @@
     
     
 </head>
-<body>
+<body class="blog">
 
-  <!-- Site's Header-->
-  <header class="site-header" role="banner">
-    <div class="container">
+<!-- Site's Header-->
+<header class="site-header" role="banner">
+  <div class="container">
+    <!-- Branding, can be a logo, img ect. -->
+    <a class="branding" href="../">
+      <img src="..//img/logo.png" class="branding__logo" alt="Justin Aven">
+      <h1 class="branding__wordmark">Justin Aven</h1>
+    </a>
+    <!-- Main site nav -->
+    <nav class="site-nav">
+      <ul class="site-nav__list" role="navigation">
+        <li class="site-nav__list-item"><a href="#" class="active">Blog</a></li>
+        <li class="site-nav__list-item"><a href="#">Portfolio</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-      <!-- Branding, can be a logo, img ect. -->
-      <a class="branding" href="../">
-          <img src="img/logo.png" class="branding__logo" alt="Justin Aven">
-          <h1 class="branding__wordmark">Justin Aven</h1>
-      </a>
-
-      <!-- Main site nav -->
-      <nav class="site-nav primary-nav">
-          <ul class="site-nav__list" role="navigation">
-              <li class="site-nav__list-item">
-                  <a href="#" class="active">Blog</a>
-              </li>
-              <li class="site-nav__list-item"><a href="#">Portfolio</a></li>
-          </ul>
-      </nav>
-
-    </div>
-  </header>
-
-
-    <!-- Site's Main Content-->
-    <main class="site-main" role="main">
-
-        <!-- sample blog section.  Styles specific to this section will be in _5_sections/_blog.scss -->
-        <section class="blog">
-            <div class="container">
-<!-- This loops through the paginated posts -->
+<!-- Site's Main Content-->
+<main class="site-main" role="main">
+<!-- sample blog section.  Styles specific to this section will be in _5_sections/_blog.scss -->
+  <section class="section">
+    <div class="section__inner container">
+      <!-- This loops through the paginated posts -->
+<div class="grid blog-posts"><!--
+  
+    --><div class="grid__item one-whole large--two-thirds push--large--one-sixth link text">
+      <h2><a href="/blog/the-media-wrapper-and-its-numerous-uses/">five</a></h2>
+      <p class="author">
+        <span class="date">2015-07-15 00:00:00 -0500</span>
+      </p>
+      <div class="content">
+        <p>When you think of a media/mulitimedia wrapper, most people associate it primarily with making embedded videos responsive. For those of you who don't know about this, please allow me to explain.</p>
+<p>This is the typical media wrapper:</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-wrapper"</span><span class="nt">&gt;</span>
+    [VIDEO CODE HERE]
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<p>Simple, right? Here's the css that goes with it:</p>
 
 
+      </div>
+      <div>
+        <span class="date"></span>
+      </div>
+    </div><!--
+  
+    --><div class="grid__item one-whole large--two-thirds push--large--one-sixth link text">
+      <h2><a href="/blog/big-software-and-vms/">Big Software and VMs</a></h2>
+      <p class="author">
+        <span class="date">2015-04-29 00:00:00 -0500</span>
+      </p>
+      <div class="content">
+        <p>As a front-end developer, I primarily code html, css, and javascript. I use Sublime Text (2) as my code editor, as well CodeKit, Git, Grunt & Bower to help process, compile, & manage code for my projects. I have a set of tools which I have become accustomed to using on most of my projects. Why not? They're easy to use, have the capabilities I need, and allow me to turn off certain features I don't use. This helps me be more efficient and consistent. I work on a Mac. Very few of the tools I use are only available for the Mac OS.</p>
+<p>In the last 12 months, I have been involved in 2 separate projects which required me to run a specific coding environment on a Windows VM. Now before you go hating, let me reassure you that I have plenty of respect for those who develop on a PC. This [rant] is not in reference to PC vs Mac. Some of my best friends use Windows. No. Both projects were based on Java frameworks (cross platform friendly, right?) from two of the biggest software companies on the planet. Yet, the dev software only worked in Windows.</p>
+<p>Big Software, there are a lot of developers who use Macs (and Linux based os's) to develop, and the number is growing.</p>
+<p>By the way, it wasn't Oracle or Microsoft.</p>
 
-<br>
-<br>
-<br>
+
+
+      </div>
+      <div>
+        <span class="date"></span>
+      </div>
+    </div><!--
+  
+    --><div class="grid__item one-whole large--two-thirds push--large--one-sixth link text">
+      <h2><a href="/blog/what-a-collaboration-space-isnt/">What a Collaboration Space Isn't</a></h2>
+      <p class="author">
+        <span class="date">2015-04-28 00:00:00 -0500</span>
+      </p>
+      <div class="content">
+        <p>So, recently okay… about a year and half ago, a friend of mine's team was absorbed into another division of his company. In addition to changing personnel, they decided to move the team, physically, into another area. The previous space provided was large, perhaps too large for the team anyway. Each team member had a larger than average cube and 99% of the work they did was on the computer so some space could definitely be eliminated.</p>
+<p>Fast-forward to the move. The new area for the entire team was roughly 15% of the original space's size. One third of the team members were moved into offices, not bad, while the rest were places at staggered desks in the middle of the room facing each other with no walls or visual boundaries. The space behind these team members were essentially open walkways and invitations for anyone to walk up behind the working team members. This new area was called a "collaboration space".</p>
+<p><img src="https://media4.giphy.com/media/1Jmv4Y5ZXgUq4/200.gif" class="right medium">Upper management described the area as a collaboration area. One specific high-up stated, I have read that areas like these raise productivity by 15%. Sounds good. People in close quarters working on similar things could converse and share ideas about projects in a efficient and effective manner. This makes it easy to call a quick status meeting, or gather for some quick ideation on a whiteboard.</p>
+<p>So what happens when all of the people in the area are working on completely separate projects? What about all of the other people not located in this area who are active contributors to the project? What if the people located within the area have several projects on which they're working? Collaboration is not only non-existent, it's a misnomer. It's a farce. It becomes just another way to cram several people to save money on resources, which, if we're being honest, may or may not have been the main intention of upper management, but it definitely was a great added benefit when planning.</p>
+<p>The area was distracting for those who had never worked in an open area. The busy walkway 2 feet behind them. Several separate little meetings at each person's desk going on at the same time. It was especially distracting for those who struggle with actual disorders such as anxiety and ADD. One of the team members left the area daily to go to the team's previous area (though still a part of the company, stayed vacated for the indefinite future), where he would sit and do work, uninterrupted, in one of the many empty cubicles. Aside from all of this, there was not an option for privacy. Often to take a personal call, members would have to go to another area of the building or the parking lot.</p>
+<p>Collaboration areas are a great thing… when being used by several people working together frequently toward the same purpose. Otherwise, call it what it is, a space saving work area. People still may not like it, but at least it's the truth.</p>
+
+
+      </div>
+      <div>
+        <span class="date"></span>
+      </div>
+    </div><!--
+  
+    --><div class="grid__item one-whole large--two-thirds push--large--one-sixth link text">
+      <h2><a href="/blog/processes-deadlines-desired-delayed-launch-date/">Processes, Deadlines, & Desired/Delayed Launch Date</a></h2>
+      <p class="author">
+        <span class="date">2015-04-27 00:00:00 -0500</span>
+      </p>
+      <div class="content">
+        <p>Processes are only as good as those who create them. No. Wait. They're only as good as those who follow them. Err... Maybe they're only as good as those who have to enforce them? Hmmm... Maybe it's all three.</p>
+<p>Of all of the projects I've worked, I'm not sure that I have been a part of one that had all of the pieces when deadlines hit. I can say that most of the projects in which I've been involved seemed to have been plotted by an hourglass rather than a starting line. Meaning, instead of the project starting off like,"If we start today, it will take 2 weeks to launch", it's more like,"Hey, we already sent out marketing that direct our customers to the new site next Monday, so we have 4 business day until we MUST launch." This is just an example, so I'm not saying that it's always Marketing's fault.</p>
+<p>When everyone's working from the same pool of time, and the first people in the process take longer than projected, this shrinks the window to finish the project by that much for those working on the last pieces. This is perpetuated when there are no consequences for missed deadlines. Now, don't misunderstand. I'm not talking about punishment as a consequence. I'm saying that the timeline needs to be corrected or adjusted according to each deadline missed. This will allow each piece of the process it's original allotted amount of time. Yes. This means the project will not launch on it's designated launch date, and the delay will burn only those who didn't plan correctly in the beginning.</p>
+<p>"Burn" seems like a harsh word, but I'm referring to the hot pot analogy. Sometimes, telling a child not to touch the hot pot isn't enough, but after that first touch, the child will probably be more cautious and probably won't touch it again . In my experience with the hourglass project, most start to point fingers and place blame as to why the deadlines aren't met. If the "consequence" of shifting the timeline and delaying the launch is put in place at the beginning, this will lead to better project planning with ample time for each piece. </p>
+<p>Keep in mind, practice makes better, not perfect. And that should be okay. </p>
 
 
 
+      </div>
+      <div>
+        <span class="date"></span>
+      </div>
+    </div><!--
+  
+    --><div class="grid__item one-whole large--two-thirds push--large--one-sixth link text">
+      <h2><a href="/blog/i-work-with-a-bunch-of-nerds/">I Work with a Bunch of Nerds</a></h2>
+      <p class="author">
+        <span class="date">2015-04-21 00:00:00 -0500</span>
+      </p>
+      <div class="content">
+        <p>The other day, my coworkers (and good friends) were ALL discussing the new Star Wars trailer. Amongst the conversation, I happened to mention that I had bits and pieces of the movies but had never seen any of them all of the way through. I'm pretty sure I heard a record screech to a stop and all heads tuned my way. That opened the door for all sorts of criticism [joking]. Then I realized, I'm the "uncool" one of the group.</p>
+<p>Minutes later, the subject had changed to comic books, and I was back in the game. </p>
+<p>Yeah. It's like that.</p>
+
+
+
+      </div>
+      <div>
+        <span class="date"></span>
+      </div>
+    </div><!--
+  
+--></div>
 <!-- Pagination links -->
 <div class="pagination">
   
     <span class="previous">Previous</span>
   
-  <span class="page_number ">Page:  of </span>
+  <span class="page_number ">Page: 1 of 2</span>
   
-    <span class="next ">Next</span>
+    <a href="/blog/page2" class="next">Next</a>
   
 </div>
 
-<br>
-<br>
-<br>
-
-
-
-
-            </div>
-        </section>
-
-    </main>
-
+    </div>
+  </section>
+</main>
     <!-- Site's Main Footer-->
     <footer class="site-footer" role="contentinfo">
       <div class="container">

@@ -21,6 +21,7 @@
     <![endif]-->
 
     <!-- For all other browsers -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <!--[if gt IE 8]><!-->
         <link rel='stylesheet' href='../../css/screen.css'>
         
@@ -44,79 +45,73 @@
     
     
 </head>
-<body>
+<body class="blog">
 
-  <!-- Site's Header-->
-  <header class="site-header" role="banner">
-    <div class="container">
-
-      <!-- Branding, can be a logo, img ect. -->
-      <a class="branding" href="../../">
-          <img src="img/logo.png" class="branding__logo" alt="Justin Aven">
-          <h1 class="branding__wordmark">Justin Aven</h1>
-      </a>
-
-      <!-- Main site nav -->
-      <nav class="site-nav primary-nav">
-          <ul class="site-nav__list" role="navigation">
-              <li class="site-nav__list-item">
-                  <a href="#" class="active">Blog</a>
-              </li>
-              <li class="site-nav__list-item"><a href="#">Portfolio</a></li>
-          </ul>
-      </nav>
-
-    </div>
-  </header>
-
-
-    <!-- Site's Main Content-->
-    <main class="site-main" role="main">
-
-        <!-- sample blog section.  Styles specific to this section will be in _5_sections/_blog.scss -->
-        <section class="blog">
-            <div class="container">
-<!-- This loops through the paginated posts -->
-
-  <h2><a href="/blog/my-first/">Not this one</a></h2>
-  <p class="author">
-    <span class="date">2016-01-26 00:00:00 -0600</span>
-  </p>
-  <div class="content">
-    ### Word ###
-* something
-
+<!-- Site's Header-->
+<header class="site-header" role="banner">
+  <div class="container">
+    <!-- Branding, can be a logo, img ect. -->
+    <a class="branding" href="../../">
+      <img src="../..//img/logo.png" class="branding__logo" alt="Justin Aven">
+      <h1 class="branding__wordmark">Justin Aven</h1>
+    </a>
+    <!-- Main site nav -->
+    <nav class="site-nav">
+      <ul class="site-nav__list" role="navigation">
+        <li class="site-nav__list-item"><a href="#" class="active">Blog</a></li>
+        <li class="site-nav__list-item"><a href="#">Portfolio</a></li>
+      </ul>
+    </nav>
   </div>
-  <div>
-    <span class="date"></span>
-  </div>
+</header>
 
-  <h2><a href="/blog/welcome-to-air-drop/">Welcome to Air-Drop!</a></h2>
-  <p class="author">
-    <span class="date">2000-01-01 00:00:00 -0600</span>
-  </p>
-  <div class="content">
-    
-
-
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
-
-Link test: ../../css/screen.css
-
-  </div>
-  <div>
-    <span class="date"></span>
-  </div>
+<!-- Site's Main Content-->
+<main class="site-main" role="main">
+<!-- sample blog section.  Styles specific to this section will be in _5_sections/_blog.scss -->
+  <section class="section">
+    <div class="section__inner container">
+      <!-- This loops through the paginated posts -->
+<div class="grid blog-posts"><!--
+  
+    --><div class="grid__item one-whole large--two-thirds push--large--one-sixth link text">
+      <h2><a href="/blog/when-a-better-coder-gets-hold-of-your-code/">When a Better Coder Gets Hold of Your Code</a></h2>
+      <p class="author">
+        <span class="date">2015-04-19 00:00:00 -0500</span>
+      </p>
+      <div class="content">
+        <p>I was lucky enough to have a great mentor when I got into front-end development. He was patient and didn't mind teaching me because I really wanted to learn. For some crazy reason he trusted me with tasks with which I didn't trust myself. Well. I'm not sure if he trusted me or just didn't have the time to maintain certain sites and decided to give them to me and take a chance. Either way, it was a great way to learn.</p>
+<p>After I was actually hired onto his team, I was given more and more difficult tasks. And I grew in the challenges. I'd do what I could on the really difficult stuff and ask questions when I was stuck or finished (because I just wanted to know what I could have done better). It was not uncommon to come in to work and him say,"Hey, you know that thing you've been working on for the last couple of days? Well I rewrote it last night." It was a little odd because I wasn't offended by this. I felt more guilty that he felt that it needed to be rewritten and had to expend his time to redo something he delegated to me, but I wasn't offended.</p>
+<p>The key was that he had 7 years on me in this industry and I valued his input. So, instead of licking my wounds, I took the opportunity to download what he did and see how he improved upon what I had done. I always looked at it as a learning opportunity. I would advise anyone, in a job where you can fine tune your skills, to latch on to someone who is better at your job. Analyze their work. Ask questions. Have them critique your work, don't take offense, and instead learn from their feedback. Otherwise, you're missing out. </p>
 
 
 
-<br>
-<br>
-<br>
+      </div>
+      <div>
+        <span class="date"></span>
+      </div>
+    </div><!--
+  
+    --><div class="grid__item one-whole large--two-thirds push--large--one-sixth link text">
+      <h2><a href="/blog/features-vs-implementation/">Features Vs Implementation</a></h2>
+      <p class="author">
+        <span class="date">2015-03-12 00:00:00 -0500</span>
+      </p>
+      <div class="content">
+        <p>Sometimes, when features are presented to us from the seller, the product sounds amazing. It can do so much!! It's too good to be true. And it often is, and you were sold lots of assembly required. </p>
+<p>I say this from the standpoint of the person that is handed the tool to use and now I need to run through a gauntlet of coding to get the "out-of-the-box" features to work.</p>
+<p>Most of the time it's like, "this new car comes with new thick tread tires, the latest tech audio system, and a hand that will reach out from the dash and stroke your beard for you as you think and drive." So you buy the car and upon delivery you discover that the new features are included, but are located in the trunk unassembled. "Oh! You wanted them on the car? Oh, we don't do that, but we can recommend a great company that knows our products who you can contract to install these new features."</p>
+<p>To those in procurement, please don't buy without the sign off of someone that actually has to implement. They can let you know just how much time and effort it will take to implement, and if the unicorn really does exist. Deal? Phew... I feel better about this already. In future news, everyone listened to the craftsman and never bought anything again because nothing works right out of the box as promised</p>
+<p>I'm just kidding. No one listens to the craftsman.</p>
 
 
 
+      </div>
+      <div>
+        <span class="date"></span>
+      </div>
+    </div><!--
+  
+--></div>
 <!-- Pagination links -->
 <div class="pagination">
   
@@ -128,18 +123,9 @@ Link test: ../../css/screen.css
   
 </div>
 
-<br>
-<br>
-<br>
-
-
-
-
-            </div>
-        </section>
-
-    </main>
-
+    </div>
+  </section>
+</main>
     <!-- Site's Main Footer-->
     <footer class="site-footer" role="contentinfo">
       <div class="container">

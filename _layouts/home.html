@@ -1,20 +1,38 @@
 ---
 layout: home
+body_class: home
 ---
 {% include head.html %}
 {% include header.html %}
-
-    <!-- Site's Main Content-->
-    <main class="site-main" role="main">
-
-        <section class="section">
-            <div class="section__inner">
-
-                {{ content }}
-
+<!-- Site's Main Content-->
+<main class="site-main" role="main">
+  <section class="section section--no-bg home-top-intro">
+    <div class="section__inner container">
+      {{ content }}
+    </div>
+  </section>
+  <section class="section">
+    <div class="section__inner container">
+      <div class="grid blog-posts"><!--
+      --><div class="grid__item one-whole l--two-thirds push--l--one-sixth link text">
+            <div class="grid blog-posts"><!--
+        {% for post in site.posts  limit:3 %}
+          --><div class="grid__item post">
+            <h2 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="post__meta">
+              <span class="post__date">{{ post.date  | date: "%B %d, %Y" }}</span>
+            </p>
+            <div class="post__content--excerpt">
+              {{ post.excerpt | truncatewords:35 }}
             </div>
-        </section>
-
-    </main>
-
+            <!-- <div>
+              <span class="date">{{ post.category }}</span>
+            </div>-->
+          </div><!--
+        {% endfor %}
+      --></div><!--
+      --></div></div>
+    </div>
+  </section>
+</main>
 {% include footer.html %}

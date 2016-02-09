@@ -21,6 +21,7 @@
     <![endif]-->
 
     <!-- For all other browsers -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <!--[if gt IE 8]><!-->
         <link rel='stylesheet' href='css/screen.css'>
         
@@ -44,47 +45,85 @@
     
     
 </head>
-<body>
+<body class="home">
 
-  <!-- Site's Header-->
-  <header class="site-header" role="banner">
-    <div class="container">
+<!-- Site's Header-->
+<header class="site-header" role="banner">
+  <div class="container">
+    <!-- Branding, can be a logo, img ect. -->
+    <a class="branding" href="">
+      <img src="/img/logo.png" class="branding__logo" alt="Justin Aven">
+      <h1 class="branding__wordmark">Justin Aven</h1>
+    </a>
+    <!-- Main site nav -->
+    <nav class="site-nav">
+      <ul class="site-nav__list" role="navigation">
+        <li class="site-nav__list-item"><a href="#" class="active">Blog</a></li>
+        <li class="site-nav__list-item"><a href="#">Portfolio</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-      <!-- Branding, can be a logo, img ect. -->
-      <a class="branding" href="">
-          <img src="img/logo.png" class="branding__logo" alt="Justin Aven">
-          <h1 class="branding__wordmark">Justin Aven</h1>
-      </a>
-
-      <!-- Main site nav -->
-      <nav class="site-nav primary-nav">
-          <ul class="site-nav__list" role="navigation">
-              <li class="site-nav__list-item">
-                  <a href="#" class="active">Blog</a>
-              </li>
-              <li class="site-nav__list-item"><a href="#">Portfolio</a></li>
-          </ul>
-      </nav>
-
-    </div>
-  </header>
-
-
-    <!-- Site's Main Content-->
-    <main class="site-main" role="main">
-
-        <section class="section">
-            <div class="section__inner">
-
-                This is an H1
+<!-- Site's Main Content-->
+<main class="site-main" role="main">
+  <section class="section section--no-bg home-top-intro">
+    <div class="section__inner container">
+      This is an H1
 =============
 
-
+    </div>
+  </section>
+  <section class="section">
+    <div class="section__inner container">
+      <div class="grid blog-posts"><!--
+      --><div class="grid__item one-whole l--two-thirds push--l--one-sixth link text">
+            <div class="grid blog-posts"><!--
+        
+          --><div class="grid__item post">
+            <h2 class="post__title"><a href="/blog/the-media-wrapper-and-its-numerous-uses/">five</a></h2>
+            <p class="post__meta">
+              <span class="post__date">July 15, 2015</span>
+            </p>
+            <div class="post__content--excerpt">
+              <p>When you think of a media/mulitimedia wrapper, most people associate it primarily with making embedded videos responsive. For those of you who don't know about this, please allow me to explain.</p> <p>This is the typical...
             </div>
-        </section>
-
-    </main>
-
+            <!-- <div>
+              <span class="date"></span>
+            </div>-->
+          </div><!--
+        
+          --><div class="grid__item post">
+            <h2 class="post__title"><a href="/blog/big-software-and-vms/">Big Software and VMs</a></h2>
+            <p class="post__meta">
+              <span class="post__date">April 29, 2015</span>
+            </p>
+            <div class="post__content--excerpt">
+              <p>As a front-end developer, I primarily code html, css, and javascript. I use Sublime Text (2) as my code editor, as well CodeKit, Git, Grunt & Bower to help process, compile, & manage code for...
+            </div>
+            <!-- <div>
+              <span class="date"></span>
+            </div>-->
+          </div><!--
+        
+          --><div class="grid__item post">
+            <h2 class="post__title"><a href="/blog/what-a-collaboration-space-isnt/">What a Collaboration Space Isn't</a></h2>
+            <p class="post__meta">
+              <span class="post__date">April 28, 2015</span>
+            </p>
+            <div class="post__content--excerpt">
+              <p>So, recently okay… about a year and half ago, a friend of mine's team was absorbed into another division of his company. In addition to changing personnel, they decided to move the team, physically, into...
+            </div>
+            <!-- <div>
+              <span class="date"></span>
+            </div>-->
+          </div><!--
+        
+      --></div><!--
+      --></div></div>
+    </div>
+  </section>
+</main>
     <!-- Site's Main Footer-->
     <footer class="site-footer" role="contentinfo">
       <div class="container">

@@ -49,13 +49,13 @@ $spacing: (
 
 // breakpoints - should always be based off of a 16px base
 $breakpoints: (
-    'xl'                : em(1280, 16),
-    'l'                 : em(960, 16),
-    'm'                 : em(769, 16),
+    'xl'                : em(1200, 16),
+    'l'                 : em(900, 16),
+    'm'                 : em(600, 16),
     's'                 : em(481, 16)
 );
 
-$maxwidth               : em(1440);
+$maxwidth               : em(1200);
 
 
 
@@ -133,26 +133,26 @@ $responsive-typography: true;
 
 $font-sizes: (
     'xxl'               : (
-                            'min-font-size' : (rem(40), 1),
-                            'max-font-size' : rem(50),
+                            'min-font-size' : (rem(45), 1),
+                            'max-font-size' : rem(54),
                             'lower-font-range' : 's',
                             'upper-font-range' : 'l'
                           ),
     'xl'                : (
-                            'min-font-size' : (rem(27), 1.2),
-                            'max-font-size' : rem(36),
+                            'min-font-size' : (rem(30), 1.2),
+                            'max-font-size' : rem(45),
                             'lower-font-range' : 's',
                             'upper-font-range' : 'l'
                           ),
     'l'                 : (
-                            'min-font-size' : (rem(20), 1.3),
-                            'max-font-size' : rem(27),
+                            'min-font-size' : (rem(22), 1.3),
+                            'max-font-size' : rem(30),
                             'lower-font-range' : 's',
                             'upper-font-range' : 'l'
                           ),
     'm'                 : (
                             'min-font-size' : (rem(16), 1.4),
-                            'max-font-size' : rem(20),
+                            'max-font-size' : rem(22),
                             'lower-font-range' : 's',
                             'upper-font-range' : 'l'
                           ),
@@ -180,18 +180,19 @@ $font-sizes: (
 $gutter:                spacing('l');
 
 $use-silent-classes:    false;
-$push:                  false;
-$pull:                  false;
+$push:                  true;
+$pull:                  true;
 
 $grid-breakpoints: (
-    'medium' query('s'),
-    'large' query('l'),
-    'wide' query('xl')
+    's' query('s'),
+    'm' query('m'),
+    'l' query('l'),
+    'xl' query('xl')
 );
 
-$breakpoint-has-widths: ('medium', 'large', 'wide');
-$breakpoint-has-push:   ('medium', 'large', 'wide');
-$breakpoint-has-pull:   ('medium', 'large', 'wide');
+$breakpoint-has-widths: ('s', 'm', 'l', 'xl');
+$breakpoint-has-push:   ('s', 'm', 'l', 'xl');
+$breakpoint-has-pull:   ('s', 'm', 'l', 'xl');
 
 
 
@@ -218,25 +219,16 @@ $breakpoint-has-pull:   ('medium', 'large', 'wide');
 // there is also a function to return these colors quickly. Ex. color('aqua')
 $colors: (
     // Cool
-    'aqua'              : #7fdbff,
-    'blue'              : #0074d9,
+    'aqua'              : #BDCBD6,
     'navy'              : #354458,
-    'teal'              : #39cccc,
-    'green'             : #2ecc40,
-    'olive'             : #3d9970,
-    'lime'              : #01ff70,
     'cream'             : #F1EBE6,
     // Warm
-    'yellow'            : #ffdc00,
     'orange'            : #BB7248,
-    'red'               : #ff4136,
-    'fuchsia'           : #f012be,
-    'purple'            : #b10dc9,
-    'maroon'            : #85144b,
     // Grey Scale
     'white'             : #fff,
     'silver'            : #ddd,
     'gray'              : (
+                            'bgray ': #BB7248,
                             'base'  : #aaa,
                             'light' : #ccc,
                             'dark'  : #888

@@ -25,6 +25,7 @@
     <![endif]-->
 
     <!-- For all other browsers -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <!--[if gt IE 8]><!-->
         <link rel='stylesheet' href='{{ baseurl }}css/screen.css'>
         {% if page.css %}
@@ -56,4 +57,4 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     {% endif %}
 </head>
-<body>
+<body class="{{page.body_class}}">

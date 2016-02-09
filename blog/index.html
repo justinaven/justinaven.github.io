@@ -1,34 +1,25 @@
 ---
 layout: blog-home
 title:  Blog
+body_class: blog
 ---
-
-
-
-
-
-
 <!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
-  </div>
-  <div>
-    <span class="date">{{ post.category }}</span>
-  </div>
-{% endfor %}
-
-
-<br>
-<br>
-<br>
-
-
-
+<div class="grid blog-posts"><!--
+  {% for post in paginator.posts %}
+    --><div class="grid__item one-whole large--two-thirds push--large--one-sixth link text">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="author">
+        <span class="date">{{ post.date }}</span>
+      </p>
+      <div class="content">
+        {{ post.excerpt }}
+      </div>
+      <div>
+        <span class="date">{{ post.category }}</span>
+      </div>
+    </div><!--
+  {% endfor %}
+--></div>
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
@@ -43,7 +34,3 @@ title:  Blog
     <span class="next ">Next</span>
   {% endif %}
 </div>
-
-<br>
-<br>
-<br>
