@@ -19,7 +19,7 @@
 .section {
   background: color('cream');
   color: color('navy');
-  padding: spacing('l') 0;
+  padding: spacing('xl') 0;
   &__inner {
     // margin: 0 auto;
     // max-width: em(1280, 16);
@@ -71,6 +71,12 @@
 }
 
 
+.grid__item {
+  &.post {
+    margin-bottom: spacing('xl')
+  }
+}
+.post__content--excerpt p:last-child {margin-bottom: 0;}
 
 
 

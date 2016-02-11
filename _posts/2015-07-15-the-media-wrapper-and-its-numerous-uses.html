@@ -1,19 +1,17 @@
 ---
 layout: blog
-title:  "five"
+title:  The Media Wrapper and it's Numerous Uses
 ---
 
 <p>When you think of a media/mulitimedia wrapper, most people associate it primarily with making embedded videos responsive. For those of you who don't know about this, please allow me to explain.</p>
 <p>This is the typical media wrapper:</p>
-{% highlight html %}
-<div class="media-wrapper">
+<pre><code class="language-markup">&lt;div class="media-wrapper"&gt;
     [VIDEO CODE HERE]
-</div>
-{% endhighlight %}
-<p>Simple, right? Here's the css that goes with it:</p>
+&lt;/div&gt;
+</code></pre>
 
-{% highlight css %}
-.media-wrapper {
+<p>Simple, right?  Here's the css that goes with it:</p>
+<pre><code class="language-css">.media-wrapper {
     height: 0;
     padding-bottom: 56.25%;
     position: relative;
@@ -28,8 +26,9 @@ title:  "five"
     padding: 0;
     position: absolute;
     width: 100%;
-}
-{% endhighlight %}
+}</code></pre>
+
+
 <p>The media-wrapper becomes an exact conatainer with dimension porportionally base on the with of it's parent window. So to break it down:</p>
 <ul>
     <li>the media wrapper has a position of relative, and a height of 0, which collapses the wrapper</li>
@@ -38,39 +37,36 @@ title:  "five"
     <li>If you need a perfect square, set the padding-bottom to 100%</li>
 </ul>
 <div class="grid">
-    <object class="resize-trigger" style="display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; pointer-events: none; z-index: -1; visibility: hidden;" type="text/html" data="about:blank"></object>
-    <div class="grid__item medium--one-third first">
+    <div class="grid__item m--one-third first">
         <p>HAS Media Wrapper</p>
         <div class="multimedia">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/uj1_ev-842c" frameborder="0" allowfullscreen=""></iframe>
         </div>
     </div><!--
-    --><div class="grid__item medium--one-third">
+    --><div class="grid__item m--one-third">
         <p>NO Media Wrapper (width:100%)</p>
         <iframe width="100%" height="315" src="https://www.youtube.com/embed/uj1_ev-842c" frameborder="0" allowfullscreen=""></iframe>
     </div><!--
-    --><div class="grid__item medium--one-third last">
+    --><div class="grid__item m--one-third last">
         <p>NO Media Wrapper</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/uj1_ev-842c" frameborder="0" allowfullscreen=""></iframe>
     </div>
-    <object style="display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; pointer-events: none; z-index: -1;" type="text/html" data="about:blank"></object>
 </div>
 <p>Even if coded differently, the principles of the wrapper come in handy for other applications. Here, I have created a responsive tiled list: <a href="http://codepen.io/justinaven/pen/xAtng" target="_blank">http://codepen.io/justinaven/pen/xAtng</a></p>
 <p>Here is the structure:</p>
-<pre><code class="language-markup">
-<div class="tiled_image">
-    <div>
-        <img src="https://placeimg.com/300/200/tech">
-    </div>
-</div>
+<pre><code class="language-markup">&lt;div class="tiled_image">
+    &lt;div>
+        &lt;img src="https://placeimg.com/300/200/tech">
+    &lt;/div>
+&lt;/div>
 </code></pre>
-<p>The <code>&lt;div class="tiled_image"&gt;</code> is, essentially the media-wrapper in this instance. It being a 1:1 aspect ratio (a square by means of a <code>padding-bottom:100%</code> ), that is being used to contain an image and restrain it to a certain size.</p>
+<p>The <code>&lt;div class="tiled_image"></code> is, essentially the media-wrapper in this instance. It being a 1:1 aspect ratio (a square by means of a <code>padding-bottom:100%</code> ), that is being used to contain an image and restrain it to a certain size.</p>
 <p>Here are some other uses:</p>
 <ul>
     <li><a href="http://codepen.io/justinaven/pen/qGEgF" target="_blank">Responsive slideshow (http://codepen.io/justinaven/pen/qGEgF)</a>:
         <ul>
             <li>
-                <code>&lt;div class="img-wrap"&gt;</code> is the media-wrapper in this instance
+                <code>&lt;div class="img-wrap"></code> is the media-wrapper in this instance
             </li>
         </ul>
     </li>

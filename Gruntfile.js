@@ -18,7 +18,8 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     'js/global.js' : [
-                    'js/scripts/logging.js'
+                    'js/scripts/logging.js',
+                    'vendor/prism.js'
                     ]
                 }
             },

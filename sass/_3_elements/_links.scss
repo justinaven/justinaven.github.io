@@ -28,7 +28,7 @@ a {
     transition: color .3s ease-in-out;
     &:link { color: color('orange'); }
     &:visited { color: color('orange'); }
-    &:hover { color: color('gray'); }
+    &:hover { color: saturate(lighten(color('orange'),10%),15%); }
     &:active { color: color('orange'); }
 }
 
