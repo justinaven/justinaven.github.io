@@ -8,6 +8,49 @@
 //
 // ---------------------------------------------------------
 
-// .home {
-//
-// }
+.home {
+  .site-main {
+    margin-top: 0;
+  }
+}
+
+
+.section {
+  &.home-top-intro .grid__item {
+    margin: spacing('m') 0;
+    vertical-align: middle;
+    text-align: center;
+  }
+}
+.avatar img {
+  max-width: 200px;
+}
+.me-intro {
+  color: color('gray:bgray');
+  text-transform: uppercase;
+  &--inner {
+    display: inline-block;
+    max-width: 480px;
+    p {@include font-size('m')}
+  }
+}
+
+@media screen and (min-width: breakpoint('s')) {
+  .section {
+    &.home-top-intro {
+      padding: 0;
+      .grid__item {
+        margin: 0;
+        &.me-intro {
+          text-align: right;
+          padding-bottom: spacing('m');
+          padding-top: spacing('m');
+        }
+      }
+    }
+  }
+  .avatar img {
+    max-width: none;
+  }
+}
+

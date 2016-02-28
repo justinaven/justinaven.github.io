@@ -12,7 +12,6 @@
 .site-main {
   padding: 0;
   margin: spacing('xl') auto 0 auto ;
-  .home & { margin-top: 0;}
 }
 
 
@@ -32,55 +31,4 @@
     background: color('aqua');
     color: color('navy');
   }
-  &.home-top-intro .grid__item {
-    margin: spacing('m') 0;
-    vertical-align: middle;
-    text-align: center;
-  }
 }
-.avatar img {
-  max-width: 200px;
-}
-.me-intro {
-  color: color('gray:bgray');
-  text-transform: uppercase;
-  &--inner {
-    display: inline-block;
-    max-width: 480px;
-    p {@include font-size('m')}
-  }
-}
-
-@media screen and (min-width: breakpoint('s')) {
-  .section {
-    &.home-top-intro {
-      padding: 0;
-      .grid__item {
-        margin: 0;
-        &.me-intro {
-          text-align: right;
-          padding-bottom: spacing('l');
-          padding-top: spacing('l');
-        }
-      }
-    }
-  }
-  .avatar img {
-    max-width: none;
-  }
-}
-
-
-.grid__item {
-  &.post {
-    margin-bottom: spacing('xl')
-  }
-}
-.post__content--excerpt p:last-child {margin-bottom: 0;}
-
-
-
-
-
-
-

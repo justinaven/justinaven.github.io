@@ -1,0 +1,20 @@
+//
+//   @blog
+// --------------------------------------------------------
+//  _5_pages/_blog.scss
+// --------------------------------------------------------
+//
+//  blog content
+//
+// --------------------------------------------------------
+
+
+.post {
+  margin-bottom: spacing('xl');
+  &__date {
+    @include make-font-size(14px);
+    color: color('gray','dark');
+  }
+  &__content--excerpt p:last-child {margin-bottom: 0;}
+}
+

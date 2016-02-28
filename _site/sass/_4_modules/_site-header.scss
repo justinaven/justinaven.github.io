@@ -30,6 +30,13 @@
       padding:  spacing('m');
       position:relative;
       text-decoration: none;
+      .blog &.blog,
+      .contact &.contact,
+      .portfolio &.portfolio
+       {
+        color: color('navy');
+        cursor: default;
+      }
     }
     &:hover a {
       color: color('navy');

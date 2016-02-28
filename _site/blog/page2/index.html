@@ -8,24 +8,16 @@
     <!-- META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Cache-control" content="description"> -->
     
 
     <!-- TITLE -->
     <title>Blog | Site Name</title>
 
-    <!-- CSS -->
-    <!-- For old IE -->
-    <!--[if (lte IE 8)&!(IEMobile)]>
-        <link rel='stylesheet' href='../../css/lte-ie8.css'>
-        
-    <![endif]-->
-
     <!-- For all other browsers -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <!--[if gt IE 8]><!-->
-        <link rel='stylesheet' href='../../css/screen.css'>
-        
-    <!--<![endif]-->
+    <link rel='stylesheet' href='../../css/screen.css'>
+    <!--  -->
 
 
     <!-- FAVICON -->
@@ -58,8 +50,9 @@
     <!-- Main site nav -->
     <nav class="site-nav">
       <ul class="site-nav__list" role="navigation">
-        <li class="site-nav__list-item"><a href="../..//blog" class="active">Blog</a></li>
-        <li class="site-nav__list-item"><a href="../..//portfolio">Portfolio</a></li>
+        <li class="site-nav__list-item"><a class="blog" href="../..//blog">Blog</a></li>
+        <li class="site-nav__list-item"><a class="portfolio" href="../..//portfolio">Portfolio</a></li>
+        <li class="site-nav__list-item"><a class="contact" href="../..//contact">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -67,33 +60,86 @@
 
 <!-- Site's Main Content-->
 <main class="site-main" role="main">
-<!-- sample blog section.  Styles specific to this section will be in _5_sections/_blog.scss -->
   <section class="section">
     <div class="section__inner container">
       <!-- This loops through the paginated posts -->
 <div class="grid blog-posts"><!--
+--><div class="grid__item one-whole l--two-thirds push--l--one-sixth link text">
+    <div class="grid blog-posts"><!--
   
-    --><div class="grid__item one-whole large--two-thirds push--large--one-sixth link text">
+    --><div class="grid__item post">
+      <h2 class="post__title"><a href="/blog/the-media-wrapper-and-its-numerous-uses/">The Media Wrapper and it's Numerous Uses</a></h2>
+        <p class="post__meta">
+          <span class="post__date">July 15, 2015</span>
+        </p>
+        <div class="post__content--excerpt">
+          <p>When you think of a media/mulitimedia wrapper, most people associate it primarily with making embedded videos responsive. For those of you who don't know about this, please allow me to explain.</p> <p>This is the typical...
+        </div>
+      </div><!--
+  
+    --><div class="grid__item post">
+      <h2 class="post__title"><a href="/blog/big-software-and-vms/">Big Software and VMs</a></h2>
+        <p class="post__meta">
+          <span class="post__date">April 29, 2015</span>
+        </p>
+        <div class="post__content--excerpt">
+          <p>As a front-end developer, I primarily code html, css, and javascript. I use Sublime Text (2) as my code editor, as well CodeKit, Git, Grunt & Bower to help process, compile, & manage code for...
+        </div>
+      </div><!--
+  
+    --><div class="grid__item post">
+      <h2 class="post__title"><a href="/blog/what-a-collaboration-space-isnt/">What a Collaboration Space Isn't</a></h2>
+        <p class="post__meta">
+          <span class="post__date">April 28, 2015</span>
+        </p>
+        <div class="post__content--excerpt">
+          <p>So, recently okay… about a year and half ago, a friend of mine's team was absorbed into another division of his company. In addition to changing personnel, they decided to move the team, physically, into...
+        </div>
+      </div><!--
+  
+    --><div class="grid__item post">
+      <h2 class="post__title"><a href="/blog/processes-deadlines-desired-delayed-launch-date/">Processes, Deadlines, & Desired/Delayed Launch Date</a></h2>
+        <p class="post__meta">
+          <span class="post__date">April 27, 2015</span>
+        </p>
+        <div class="post__content--excerpt">
+          <p>Processes are only as good as those who create them. No. Wait. They're only as good as those who follow them. Err... Maybe they're only as good as those who have to enforce them? Hmmm......
+        </div>
+      </div><!--
+  
+    --><div class="grid__item post">
+      <h2 class="post__title"><a href="/blog/i-work-with-a-bunch-of-nerds/">I Work with a Bunch of Nerds</a></h2>
+        <p class="post__meta">
+          <span class="post__date">April 21, 2015</span>
+        </p>
+        <div class="post__content--excerpt">
+          <p>The other day, my coworkers (and good friends) were ALL discussing the new Star Wars trailer. Amongst the conversation, I happened to mention that I had bits and pieces of the movies but had never...
+        </div>
+      </div><!--
+  
+    --><div class="grid__item post">
       <h2 class="post__title"><a href="/blog/when-a-better-coder-gets-hold-of-your-code/">When a Better Coder Gets Hold of Your Code</a></h2>
-            <p class="post__meta">
-              <span class="post__date">April 19, 2015</span>
-            </p>
-            <div class="post__content--excerpt">
-              <p>I was lucky enough to have a great mentor when I got into front-end development. He was patient and didn't mind teaching me because I really wanted to learn. For some crazy reason he trusted...
-            </div>
-    </div><!--
+        <p class="post__meta">
+          <span class="post__date">April 19, 2015</span>
+        </p>
+        <div class="post__content--excerpt">
+          <p>I was lucky enough to have a great mentor when I got into front-end development. He was patient and didn't mind teaching me because I really wanted to learn. For some crazy reason he trusted...
+        </div>
+      </div><!--
   
-    --><div class="grid__item one-whole large--two-thirds push--large--one-sixth link text">
+    --><div class="grid__item post">
       <h2 class="post__title"><a href="/blog/features-vs-implementation/">"It HAS all these great features" vs Implementation</a></h2>
-            <p class="post__meta">
-              <span class="post__date">March 12, 2015</span>
-            </p>
-            <div class="post__content--excerpt">
-              <p>Sometimes, when features are presented to us from the seller, the product sounds amazing. It can do so much!! It's too good to be true. And it often is, and you were sold lots of...
-            </div>
-    </div><!--
+        <p class="post__meta">
+          <span class="post__date">March 12, 2015</span>
+        </p>
+        <div class="post__content--excerpt">
+          <p>Sometimes, when features are presented to us from the seller, the product sounds amazing. It can do so much!! It's too good to be true. And it often is, and you were sold lots of...
+        </div>
+      </div><!--
   
---></div>
+  --></div>
+  </div>
+</div>
 <!-- Pagination links -->
 <div class="pagination">
   
@@ -134,8 +180,7 @@
       </div>
     </footer>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../vendor/jquery/dist/jquery.min.js"><\/script>')</script>
+    <script src="../../vendor/zeptos.min.js"></script>
     <script src="../../js/global.min.js"></script>
     
 </body>

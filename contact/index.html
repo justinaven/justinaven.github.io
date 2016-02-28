@@ -1,0 +1,46 @@
+---
+layout: default
+body_class: contact
+title: JustinAven - Contact
+---
+<form>
+<div class="grid">
+  <div class="grid__item one-whole">
+    <fieldset class="field">
+      <label class="input__label">Your Name</label>
+      <input id="contact-form__name" type="text" placeholder="your name">
+    </article>
+  </div><!--
+--><div class="grid__item one-whole">
+    <input id="contact-form__email" type="text" placeholder="your email">
+  </div><!--
+--><div class="grid__item one-whole">
+    <textarea id="contact-form__comments" placeholder="comments and/or questions"></textarea>
+  </div>
+</div>
+</form>
+
+
+<form>
+  <article class="field">
+    <p>Here is some intro text of this field before the actual input</p>
+    <div class="field__input">
+      <label class="input__label">Your Name</label>
+      <input type="text">
+    </div>
+    <span class="field__feedback"></span>
+    <span class="field__hint"></span>
+  </article>
+  <article class="field">
+    <p class="field__text">Here is some intro text of this field</p>
+    <div class="field__input">
+      <label class="input__label">Your Email</label>
+      <input type="email">
+    </div>
+    <span class="field__feedback"></span>
+    <span class="field__hint"></span>
+  </article>
+  <footer class="action">
+    <input type="submit" class="btn" value="Submit">
+  </footer>
+</form>

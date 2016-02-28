@@ -5,18 +5,22 @@ body_class: blog
 ---
 <!-- This loops through the paginated posts -->
 <div class="grid blog-posts"><!--
-  {% for post in paginator.posts %}
-    --><div class="grid__item one-whole large--two-thirds push--large--one-sixth link text">
+--><div class="grid__item one-whole l--two-thirds push--l--one-sixth link text">
+    <div class="grid blog-posts"><!--
+  {% for post in site.posts  limit:10 %}
+    --><div class="grid__item post">
       <h2 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            <p class="post__meta">
-              <span class="post__date">{{ post.date  | date: "%B %d, %Y" }}</span>
-            </p>
-            <div class="post__content--excerpt">
-              {{ post.excerpt | truncatewords:35 }}
-            </div>
-    </div><!--
+        <p class="post__meta">
+          <span class="post__date">{{ post.date  | date: "%B %d, %Y" }}</span>
+        </p>
+        <div class="post__content--excerpt">
+          {{ post.excerpt | truncatewords:35 }}
+        </div>
+      </div><!--
   {% endfor %}
---></div>
+  --></div>
+  </div>
+</div>
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}

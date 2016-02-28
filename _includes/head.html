@@ -8,6 +8,7 @@
     <!-- META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Cache-control" content="description"> -->
     {% if page.description %}
         <meta name="description" content="{{ description }}">
     {% endif %}
@@ -15,23 +16,12 @@
     <!-- TITLE -->
     <title>{{ page.title }} | {{ site.name }}</title>
 
-    <!-- CSS -->
-    <!-- For old IE -->
-    <!--[if (lte IE 8)&!(IEMobile)]>
-        <link rel='stylesheet' href='{{ baseurl }}css/lte-ie8.css'>
-        {% if page.css %}
-            <link rel='stylesheet' href='{{ baseurl }}css/lte-ie8-{{page.css}}'>
-        {% endif %}
-    <![endif]-->
-
     <!-- For all other browsers -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <!--[if gt IE 8]><!-->
-        <link rel='stylesheet' href='{{ baseurl }}css/screen.css'>
-        {% if page.css %}
-            <link rel='stylesheet' href='{{ baseurl }}css/{{ page.css }}'>
-        {% endif %}
-    <!--<![endif]-->
+    <link rel='stylesheet' href='{{ baseurl }}css/screen.css'>
+    <!-- {% if page.css %}
+        <link rel='stylesheet' href='{{ baseurl }}css/{{ page.css }}'>
+    {% endif %} -->
 
 
     <!-- FAVICON -->

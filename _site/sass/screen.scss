@@ -202,6 +202,8 @@
 
 @import '_4_modules/prism';
 
+// @import '_4_modules/alerts';
+
 
 //  @pages
 // ---------------------------------------------------------
@@ -214,13 +216,13 @@
 //
 // ---------------------------------------------------------
 
-// @import '_5_pages/home';
+@import '_5_pages/home';
+
+@import '_5_pages/blog';
+
+@import '_5_pages/portfolio';
 
 
-
-
-
-.testing {z-index:1234;}
 
 
 //  @shame

@@ -1,0 +1,33 @@
+//
+//   @portfolio
+// --------------------------------------------------------
+//  _5_pages/_portfolio.scss
+// --------------------------------------------------------
+//
+//  portfolio content
+//
+// --------------------------------------------------------
+
+
+.port-grid {
+  &__item-wrap {
+    height:0;
+    margin-bottom: 2rem;
+    padding-bottom: 130%;
+    position:relative;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: breakpoint('s')) {
+  .port-item {
+    &__img {
+      max-height: 300px;
+      margin-bottom: 2rem;
+      position:relative;
+      overflow-y: scroll;
+      width: 100%;
+    }
+  }
+}
