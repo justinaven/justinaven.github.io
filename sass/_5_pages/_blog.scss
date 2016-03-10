@@ -16,5 +16,20 @@
     color: color('gray','dark');
   }
   &__content--excerpt p:last-child {margin-bottom: 0;}
+
+  .grid__item {margin-bottom: 1em}
+
+  &--single {
+    // .post__title {}
+  }
+  &--single {margin-bottom: 0}
+  &__subtitle { color: lighten(color('navy'),15%); }
 }
 
+pre[class*="language-"] {margin: 0 0 1em;}
+
+
+.pagination {
+  text-align: center;
+  &__prev-next, &__page-num {padding:spacing('xs');}
+}

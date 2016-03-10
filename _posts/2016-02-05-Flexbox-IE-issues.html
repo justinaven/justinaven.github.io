@@ -1,0 +1,36 @@
+---
+layout: blog
+title:  'IE 10 &amp; 11 Flexbox Issues'
+---
+
+<p>First, flexbox is great. Though, while it is great, it does have it's frustrations at times, especically with older browsers that you still have to support. For this post, specifically, IE 10 is the earliest IE version that started to support flexbox (and at the time of the post, still needed to support IE 10 &amp; 11). If you look at <a href="http://caniuse.com/#search=flex" target="_blank">caniuse.com</a>, IE 10 &amp; 11 partially support flexbox with several know issues. I'm going to hone in on 2 issues I ran into recently. Granted, this post's fix may have short-lived benefits, but I still thought it was worth posting.</p>
+
+<p>Bootstrap had just released version 4 alpha, which allows you to enable Flexbox. Queue celebration music! But, when browser testing came around, there were a couple of things that weren't right, as you should expect from a new alpha version. In IE 10 &amp; 11, the grid columns were expanding beyond the window. </p>
+
+<p>First, the Bootstrap rows and columns were styled like this:</p>
+
+<pre><code class="language-css">.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-sm-8 {
+  flex: 0 0 66.6666666667%;
+}
+</code></pre>
+
+<p>The only fix I found (via Bootstrap Github issues) was to apply a max-width to the column that is the same as the flex property percentage.</p>
+
+<pre><code class="language-css">.col-sm-8 {
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+}</code></pre>
+
+<p>I hated to have to do this, but it's a small price to pay to fix the window column blowout issue for a small percentage of users. And it can be easily removed later.</p>
+
+<p>This fixed IE11, but there was still an issue in IE10 with the grid in the megamenu. The problem was that I had used <code><a></code> instead of  <code><div></code> as columns for the megamenu. Turns out that IE10 requires a block level element for columns and didn't like the inline <code><a></code>, so I added <code>a[class*='col-'] { display: block; }</code> and all was fixed.</p>
+
+<pre><code class="language-css">.col-sm-8 {
+  display: block; /* this only needs be applied to inline elements like &lt;a> and &lt;span> when used for flex columns for IE10 */
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%; /* for IE10 &amp; IE11 */
+}</code></pre>

@@ -31,6 +31,7 @@
   &--inner {
     display: inline-block;
     max-width: 480px;
+    h1 {@include font-size('xl');}
     p {@include font-size('m')}
   }
 }

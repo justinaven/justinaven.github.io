@@ -35,8 +35,8 @@ highlighter: rouge
 
 relative_permalinks: false
 
-permalink: /blog/:categories/:title/
-paginate_path: '/blog/page:num'
+permalink: /blog/:title/
+paginate_path: '/blog/page:num/'
 paginate: 5
 
 markdown:    kramdown

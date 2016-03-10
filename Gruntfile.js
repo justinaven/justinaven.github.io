@@ -19,7 +19,8 @@ module.exports = function(grunt) {
                 files: {
                     'js/global.js' : [
                     'js/scripts/logging.js',
-                    'vendor/prism.js'
+                    'vendor/prism.js',
+                    'js/scripts/custom.js'
                     ]
                 }
             },
