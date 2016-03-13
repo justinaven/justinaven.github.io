@@ -11,43 +11,46 @@
 //
 // --------------------------------------------------------
 
-// .site-footer {
-
-// }
 
 
+.site-footer {
 
+  &__nav-list {
+    padding: spacing('m') 0;
 
-//   @site-footer__primary-nav
-// --------------------------------------------------------
-//  The primary navigation in the footer
-// --------------------------------------------------------
-
-// .site-footer__primary-nav {
-//   // Add custom styles below...
-
-// }
-
-
-
-
-//   @site-footer__secondary-nav
-// --------------------------------------------------------
-//  The secondary navigation in the footer
-// --------------------------------------------------------
-
-// .site-footer__secondary-nav {
-
-// }
-
-
-
-
-//   @site-credits
-// --------------------------------------------------------
-//  The credits section of the site
-// --------------------------------------------------------
-
-.site-credits {
-    @include font-size('xs');
+  }
+  &__nav-item {
+    background: transparent url(../img/foot-sprite.png) no-repeat 0 0;
+    display: inline-block;
+    margin-right: spacing('l');
+    a {
+      background: transparent url(../img/foot-sprite.png) no-repeat -30px 0;
+      display: block;
+      height: 30px;
+      opacity:0;
+      text-indent: -9999px;
+      transition: opacity .2s linear;
+      width: 30px;
+      &:hover{opacity:1}
+    }
+    &.linkedin {
+      background-position-y: -30px;
+      a {background-position-y: -30px;}
+    }
+    &.twitter {
+      background-position-y: -60px;
+      a {background-position-y: -60px;}
+    }
+    &.instagram {
+      background-position-y: -90px;
+      a {background-position-y: -90px;}
+    }
+  }
 }
+
+
+
+
+
+
+

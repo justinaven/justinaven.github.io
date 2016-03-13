@@ -8,6 +8,11 @@
 //
 // --------------------------------------------------------
 
+.blog-posts {
+  .post__title {
+    margin-bottom: 0;
+  }
+}
 
 .post {
   margin-bottom: spacing('xl');

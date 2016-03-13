@@ -16,16 +16,11 @@
     <!-- TITLE -->
     <title>{{ page.title }} | {{ site.name }}</title>
 
-    <!-- For all other browsers -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <!-- STYLESHEETS -->
     <link rel='stylesheet' href='{{ baseurl }}css/screen.css'>
-    <!-- {% if page.css %}
-        <link rel='stylesheet' href='{{ baseurl }}css/{{ page.css }}'>
-    {% endif %} -->
-
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/img/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
@@ -38,13 +33,6 @@
     <![endif]-->
 
     <!-- Fonts -->
-    {%if site.typekit %}
-    <script src="//use.typekit.net/{{ site.typekit }}.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    {% endif %}
-    {%if page.typekit %}
-    <script src="//use.typekit.net/{{ page.typekit }}.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    {% endif %}
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body class="{{page.body_class}}">

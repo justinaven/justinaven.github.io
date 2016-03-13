@@ -27,7 +27,7 @@ title:  'IE 10 &amp; 11 Flexbox Issues'
 
 <p>I hated to have to do this, but it's a small price to pay to fix the window column blowout issue for a small percentage of users. And it can be easily removed later.</p>
 
-<p>This fixed IE11, but there was still an issue in IE10 with the grid in the megamenu. The problem was that I had used <code><a></code> instead of  <code><div></code> as columns for the megamenu. Turns out that IE10 requires a block level element for columns and didn't like the inline <code><a></code>, so I added <code>a[class*='col-'] { display: block; }</code> and all was fixed.</p>
+<p>This fixed IE11, but there was still an issue in IE10 with the grid in the megamenu. The problem was that I had used <code>&lt;a></code> instead of  <code><&lt;div></code> as columns for the megamenu. Turns out that IE10 requires a block level element for columns and didn't like the inline <code>&lt;a></code>, so I added <code>a[class*='col-'] { display: block; }</code> and all was fixed.</p>
 
 <pre><code class="language-css">.col-sm-8 {
   display: block; /* this only needs be applied to inline elements like &lt;a> and &lt;span> when used for flex columns for IE10 */
