@@ -20,25 +20,24 @@
     width: 100%;
     &:hover{
       .port-grid__item-title {
-        background: rgba(color('navy'),.9);
-        opacity: 1;
-        color: color('cream');
+        background: rgba(color('navy'),1);
+        color: color('white');
+        padding:  spacing('l') spacing('m');
       }
     }
   }
   &__item-title {
-    background: transparent;
-    color: transparent;
+    bottom: 0;
+    background: rgba(color('navy'),.9);
+    color: color('cream');
     font-size: 0.1px;
-    height: 100%;
     line-height: 0;
-    opacity: 0;
-    padding: spacing('l');
+    padding: spacing('m');
     position: absolute;
     text-align: center;
     vertical-align: middle;
     width: 100%;
-    transition: all .2s ease-in-out;
+    transition: all .25s ease-in-out;
     white-space: nowrap;
     h3 {
       display:inline-block;
@@ -51,8 +50,21 @@
       display: inline-block;
       height:100%;
       vertical-align: middle;
-      width: 1px;
+      width: 0px;
     }
+    // &:after {
+    //   content:'\276F';
+    //   display:inline-block;
+    //   font-size: 28px;
+    //   font-weight: bold;
+    //   // margin-left: spacing('s');
+    //   margin-top: -19px;
+    //   line-height: 36px;
+    //   // position: absolute;
+    //   right: spacing('l');
+    //   top: 50%;
+    //   // vertical-align: middle;
+    // }
   }
 }
 
@@ -80,14 +92,23 @@
   }
 
   &__img-wrap {
-    max-height: 300px;
+    // max-height: 300px;
+    max-height: 80vh;
     padding-bottom: 1rem;
     overflow-y: auto;
     position: relative;
-    @media screen and (min-height: 500px) {max-height: 400px;}
-    @media screen and (min-height: 600px) {max-height: 500px;}
-    @media screen and (min-height: 800px) {max-height: 700px;}
-    @media screen and (min-height: 1000px) {max-height: 900px;}
+    @media screen and (min-height: 500px) {
+      // max-height: 400px;
+    max-height: 80vh;}
+    @media screen and (min-height: 600px) {
+      // max-height: 500px;
+    max-height: 80vh;}
+    @media screen and (min-height: 800px) {
+      // max-height: 700px;
+    max-height: 80vh;}
+    @media screen and (min-height: 1000px) {
+      // max-height: 900px;
+    max-height: 80vh;}
   }
 
 }
