@@ -21,6 +21,9 @@
     vertical-align: middle;
     text-align: center;
   }
+  &__title {
+    margin-bottom: spacing('l');
+  }
 }
 .avatar img {
   max-width: 200px;

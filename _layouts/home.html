@@ -13,25 +13,62 @@ body_class: home
   </section>
   <section class="section">
     <div class="section__inner container">
-      <div class="grid blog-posts"><!--
-      --><div class="grid__item one-whole  link text">
-            <div class="grid blog-posts"><!--
-        {% for post in site.posts  limit:3 %}
-          --><div class="grid__item post">
-            <h2 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            <p class="post__meta">
-              <span class="post__date">{{ post.date  | date: "%B %d, %Y" }}</span>
-            </p>
-            <div class="post__content--excerpt">
-              {{ post.excerpt | truncatewords:35 }}
+      <div class="section__title-wrap">
+        <h2 class="section__title"><a href="portfolio">Some Things I've Done</a></h2>
+      </div>
+      <div class="grid port-grid">
+        <div class="grid__item one-whole s--one-half l--one-third">
+          <a href="portfolio/disciples-path/" class="port-grid__item-wrap">
+            <div class="port-grid__item-title">
+              <h3>Disciples Path</h3>
             </div>
-            <!-- <div>
-              <span class="date">{{ post.category }}</span>
-            </div>-->
-          </div><!--
-        {% endfor %}
-      --></div><!--
-      --></div></div>
+            <img class="port-grid__item-img" src="{{site_url}}/portfolio/img/disciples-path-sm.jpg">
+          </a>
+        </div><!--
+      --><div class="grid__item one-whole s--one-half l--one-third">
+          <a href="portfolio/hebrews" class="port-grid__item-wrap">
+            <div class="port-grid__item-title">
+              <h3>Hebrews Initiative</h3>
+            </div>
+            <img class="port-grid__item-img" src="{{site_url}}/portfolio/img/hebrews-initiative-sm.jpg">
+          </a>
+        </div><!--
+      --><div class="grid__item one-whole s--one-half l--one-third">
+          <a href="portfolio/lifeway" class="port-grid__item-wrap">
+            <div class="port-grid__item-title">
+              <h3>LifeWay.com</h3>
+            </div>
+            <img class="port-grid__item-img" src="{{site_url}}/portfolio/img/lifeway-sm.jpg">
+          </a>
+        </div><!--
+      --><div class="grid__item one-whole s--one-half l--one-third">
+          <a href="portfolio/newchurches" class="port-grid__item-wrap">
+            <div class="port-grid__item-title">
+              <h3>New Churches</h3>
+            </div>
+            <img class="port-grid__item-img" src="{{site_url}}/portfolio/img/newchurches-sm.jpg">
+          </a>
+        </div><!--
+      --><div class="grid__item one-whole s--one-half l--one-third">
+          <a href="portfolio/vbs-2015" class="port-grid__item-wrap">
+            <div class="port-grid__item-title">
+              <h3>LifeWay VBS 2015</h3>
+            </div>
+            <img class="port-grid__item-img" src="{{site_url}}/portfolio/img/lifeway-vbs-2015-sm.jpg">
+          </a>
+        </div><!--
+      --><div class="grid__item one-whole s--one-half l--one-third">
+          <a href="portfolio/bsfl" class="port-grid__item-wrap">
+            <div class="port-grid__item-title">
+              <h3>Bible Studies for Life</h3>
+            </div>
+            <img class="port-grid__item-img" src="{{site_url}}/portfolio/img/bsfl-sm.jpg">
+          </a>
+        </div>
+      </div>
+      <h4><a class="view-more" href="portfolio"><strong>View More</strong> &#10095;</a></h4>
+
+
     </div>
   </section>
 </main>
